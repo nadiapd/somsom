@@ -65,7 +65,7 @@ const mainMenu: NavigationMenuItem[] = [
     </UMain>
 
     <USeparator
-      label="#FromFriendsToFans"
+      label="#FromFriendsForFans"
       :ui="{
         label: 'italic text-pastel-turqoise font-semibold text-lg'
       }"
