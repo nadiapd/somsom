@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --color-green-50: #EFFDF5;
+  --color-green-100: #D9FBE8;
+  --color-green-200: #B3F5D1;
+  --color-green-300: #75EDAE;
+  --color-green-400: #00DC82;
+  --color-green-500: #00C16A;
+  --color-green-600: #00A155;
+  --color-green-700: #007F45;
+  --color-green-800: #016538;
+  --color-green-900: #0A5331;
+  --color-green-950: #052E16;
+
+  --color-gray-azure: #5c7a96;
+  --color-pastel-azure: #78c2f5;
+  --color-pastel-turqoise: #9be8d7;
+  --color-light-green: #e2f7cb;
+  --color-light-yellow-green: #f8fdcf;
+  --color-very-light-orange: #fbf9f5;
+
+  /* Animasi Custom Tailwind 4 */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-drift: drift 25s linear infinite;
+  --animate-sparkle: sparkle 4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  @keyframes drift {
+    from { transform: translateX(-20%); }
+    to { transform: translateX(120%); }
+  }
+  @keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+  }
+}
