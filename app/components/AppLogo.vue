@@ -1,3 +1,12 @@
 <template>
-  <img src="@/assets/images/Logo.png" alt="Logo">
+  <img
+    src="@/assets/images/Logo.png"
+    alt="Logo"
+    width="88"
+    height="88"
+    format="avif"
+    loading="eager"
+    fetchpriority="high"
+    quality="70"
+  >
 </template>
