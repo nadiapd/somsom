@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image'],
-
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/image', '@nuxtjs/sitemap'],
   devtools: {
     enabled: true
   },
@@ -9,16 +8,17 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: '%s | Somsom Jastip',
       htmlAttrs: {
-        lang: 'en'
+        lang: 'id'
       },
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'description', content: 'Somsom Jastip menyediakan layanan jastip barang yang cepat, aman, dan terpercaya. Pesan layanan kami sekarang!' },
         { name: 'robots', content: 'index, follow' },
         { property: 'og:site_name', content: 'Somsom Jastip' },
-        { property: 'og:type', content: 'website' }
+        { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'id_ID' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -28,6 +28,9 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+  site: {
+    url: 'https://somsom-jastip.vercel.app'
+  },
 
   routeRules: {
     '/': { prerender: true }
@@ -42,5 +45,8 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+  sitemap: {
+    enabled: true
   }
 })

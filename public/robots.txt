@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /admin
+Disallow: /dashboard
+
+Allow: /
+
+Sitemap: https://somsom-jastip.vercel.app/sitemap.xml

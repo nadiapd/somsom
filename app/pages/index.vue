@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const title = 'Jasa Titip War Tiket Konser'
 const description = 'Beli tiket konser idola kamu tanpa ribet. Kami siap membantu kamu mendapatkan tiket dengan mudah dan cepat.'
-const resolve = resolveComponent
+// const resolve = resolveComponent
 useSeoMeta({
   title,
   description,
@@ -48,7 +48,7 @@ const reasonCards = ref([
       description="Beli tiket konser idola kamu tanpa ribet. Kami siap membantu kamu mendapatkan tiket dengan mudah dan cepat."
       headline="Sejak 2024"
       orientation="horizontal"
-      :ui="{ root: 'px-2 md:px-5 lg:px-10', title: 'text-gray-azure', headline: 'text-pastel-turqoise' }"
+      :ui="{ root: 'px-2 md:px-5 lg:px-10', title: 'text-gray-azure', headline: 'text-pastel-azure drop-shadow' }"
     >
       <img
         src="@/assets/images/ticket.png"
@@ -56,7 +56,7 @@ const reasonCards = ref([
         class="hidden lg:block drop-shadow-2xl"
       >
       <template #links>
-        <button class="py-4 px-10 rounded-full bg-gradient-to-r from-pastel-azure to-pastel-turqoise cursor-pointer">
+        <button class="py-4 px-10 rounded-full bg-gradient-to-r from-pastel-azure to-pastel-turqoise cursor-pointer shadow">
           <span class="drop-shadow text-white font-semibold text-lg">Pesan Sekarang</span>
         </button>
       </template>
@@ -113,7 +113,7 @@ const reasonCards = ref([
           root: 'border-none ring-0',
           wrapper: 'flex flex-col justify-center items-center text-center border-none',
           title: 'text-3xl text-gray-azure',
-          links: 'w-fit py-4 px-10 rounded-full bg-gradient-to-r from-pastel-azure to-pastel-turqoise text-white font-semibold !text-lg'
+          links: 'w-fit py-4 px-10 rounded-full bg-gradient-to-r from-pastel-azure to-pastel-turqoise text-white font-semibold !text-lg shadow'
         }"
       />
     </UPageSection>

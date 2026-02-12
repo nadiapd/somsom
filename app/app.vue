@@ -67,7 +67,7 @@ const mainMenu: NavigationMenuItem[] = [
     <USeparator
       label="#FromFriendsForFans"
       :ui="{
-        label: 'italic text-pastel-turqoise font-semibold text-lg'
+        label: 'italic text-gray-700 font-semibold text-lg'
       }"
     />
 
