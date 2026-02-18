@@ -70,6 +70,7 @@ const mainMenu: NavigationMenuItem[] = [
         label: 'italic text-gray-700 font-semibold text-lg'
       }"
     />
+    <p> Ini testing script</p>
 
     <UFooter>
       <template #left>
