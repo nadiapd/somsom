@@ -31,7 +31,6 @@
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
-      "eslint --fix",
       "eslint --max-warnings=0"
     ]
   },
